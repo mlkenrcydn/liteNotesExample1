@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NoteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,24 @@ Route::get('/', function () {
 });
 
 
+// Note Routeları
+
+Route::get('/notes',[NoteController::class, 'index'])->name('notes');
+
+
+
+
+
+
+
+
+// TEST ROUTELARI BAŞLANGIÇ
+
+Route::get('/masterTest',function (){
+    return view('front.layout.master');
+});
+
+// TEST ROUTELARI BİTİŞ
 
 //jetstream
 
