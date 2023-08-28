@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <a class="btn btn-success" href="{{ route('notes.createPage') }}">Not Oluştur</a>
+
     {{-- @dd(session('success')) --}}
 
     @if (session('success'))  {{-- session:oturum --}}
